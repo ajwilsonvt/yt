@@ -24,7 +24,7 @@
         $('#form1').submit(function(e) {
             e.preventDefault();
 
-            var id = $('#url1').val().split('/').slice(-1);
+            var id = $('#url1').val().split('/').slice(-1)[0];
             var newUrl = 'https://youtube.com/embed/' + id;
             // window.location.href = newUrl;
 
